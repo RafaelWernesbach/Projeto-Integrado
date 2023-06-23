@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #0B2C3F;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: #0B2C3F;
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        header a:hover {
+            background-color: #05F26C;
+            color: #0B2C3F;
+        }
+
+        .content {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .post-form {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .post-form textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #0511F2;
+            border-radius: 5px;
+            padding: 10px;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+
+        .post-form input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        .post-form button {
+            background-color: #084F8C;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .post-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .post-list li {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .post-list li .post-content {
+            margin-bottom: 10px;
+        }
+
+        .post-list li .post-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #084F8C;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="perfil.html">Perfil</a>
+        <a href="index.html">Menu</a>
+        <a href="https://fortes.ind.br/fale-conosco/">Contatos</a>
+        <a href="comunidade.html">Comunidade</a>
+        <a href="configuracoes.html">Configurações</a>
+    </header>
+
+    <div class="content">
+        <h1>Bem-vindo à Comunidade</h1>
+        <p>Aqui você pode interagir com outros membros, compartilhar conhecimento e participar de discussões.</p>
+
+        <div class="post-form">
+            <textarea id="post-content" placeholder="Digite seu post..."></textarea>
+            <input type="file" id="post-image" accept="image/*">
+            <button onclick="addPost()">Postar</button>
+        </div>
+
+        <ul class="post-list" id="post-list">
+        </ul>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Fortes Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addPost() {
+            var content = document.getElementById("post-content").value;
+            var image = document.getElementById("post-image").value;
+            var userName = "Usuário Anônimo";
+
+            var postItem = document.createElement("li");
+            postItem.className = "post-item";
+
+            var userNameElement = document.createElement("p");
+            userNameElement.className = "post-user";
+            userNameElement.textContent = userName;
+
+            postItem.appendChild(userNameElement);
+
+            var postContent = document.createElement("div");
+            postContent.className = "post-content";
+            postContent.textContent = content;
+
+            postItem.appendChild(postContent);
+
+            if (image) {
+                var postImage = document.createElement("img");
+                postImage.className = "post-image";
+                postImage.src = image;
+                postImage.alt = "Imagem do post";
+
+                postItem.appendChild(postImage);
+            }
+
+            var postList = document.getElementById("post-list");
+            postList.appendChild(postItem);
+
+            document.getElementById("post-content").value = "";
+            document.getElementById("post-image").value = "";
+        }
+    </script>
+</body>
+
+</html>
