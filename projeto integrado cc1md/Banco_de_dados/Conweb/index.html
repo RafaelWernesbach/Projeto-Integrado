@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #0B2C3F;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #search-container {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #search-bar {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #0511F2;
+            border-radius: 20px;
+            background-color: #084F8C;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+
+        #search-bar input {
+            width: 80%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #FFFFFF;
+            background-color: transparent;
+        }
+
+        #search-bar img {
+            width: 20px;
+            height: 20px;
+        }
+
+        #search-bar img:first-of-type {
+            margin-right: 10px;
+        }
+
+        #search-bar img:last-of-type {
+            margin-left: 10px;
+        }
+
+        #news-container {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #news-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #news-container p {
+            display: inline-block;
+            background-color: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        header a {
+            color: #0B2C3F;
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        header a:hover {
+            background-color: #05F26C;
+            color: #0B2C3F;
+        }
+
+        footer {
+            background-color: #084F8C;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="perfil.html">Perfil</a>
+        <a href="index.html">Menu</a>
+        <a href="https://fortes.ind.br/fale-conosco/">Contatos</a>
+        <a href="comunidade.html">Comunidade</a>
+        <a href="configuracoes.html">Configurações</a>
+    </header>
+
+    <div id="search-container">
+        <img id="top-image"
+            src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA_moldura-e1660776738611.png"
+            alt="Imagem acima da área de pesquisa">
+        <div id="search-bar">
+            <input type="text" placeholder="Pesquisar">
+            <img src="https://cdn-icons-png.flaticon.com/512/2311/2311526.png" alt="Imagem abaixo da barra de pesquisa">
+        </div>
+    </div>
+
+    <div id="news-container">
+        <img src="https://revistaoe.com.br/wp-content/uploads/2021/10/DJI_0387-scaled.jpg" alt="Imagem da notícia">
+        <p>Concluimos nossa obra em osasco-SP!!!! </p>
+    </div>
+
+    <footer>
+        <p>© 2023 Fortes Engenharia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
