@@ -5,7 +5,7 @@
 - Visual Studio Code
 - ChatGPT
 
-# LINKS
+# PAGES
 
 - [LINK DO PAGES](https://rafaelwernesbach.github.io/pages-projeto-integrado/)
 
