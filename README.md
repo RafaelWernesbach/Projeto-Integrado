@@ -18,3 +18,4 @@
 - "Experiência e Interface com o Usuário"
 - "Construção de Software para Web"
 
+#### O projeto se tratou da construção e desenvolvimento de um site e um banco de dados baseado em um banco de talentos
