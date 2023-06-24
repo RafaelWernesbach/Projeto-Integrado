@@ -1,4 +1,4 @@
-### Este diretório referência a parte de Desing e Desenvolvimento de Banco de Dados lecionada pelo professor Abrantes Araujo Silva Filho
+### Este diretório faz referência a parte de Desing e Desenvolvimento de Banco de Dados lecionada pelo professor Abrantes Araujo Silva Filho
 
 ## PROGRAMAS QUE FORAM UTILIZADOS
 
