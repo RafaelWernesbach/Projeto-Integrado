@@ -1,11 +1,11 @@
 
-### Este diretório referência a parte de Construção de Software para Web lecionada pelo professor Otavio Lube dos Santos
+## Este diretório referência a parte de Construção de Software para Web lecionada pelo professor Otavio Lube dos Santos
 
-## PROGRAMAS QUE FORAM UTILIZADOS
+### PROGRAMAS QUE FORAM UTILIZADOS
 - Visual Studio Code
 - ChatGPT
 
-
+#LINKS
 
 - [LINK DO PAGES](https://rafaelwernesbach.github.io/pages-projeto-integrado/)
 
