@@ -19,5 +19,5 @@
 - "Construção de Software para Web"
 
 #### O projeto se tratou da idealização e prototipação de um site através do figma que comportará um banco de talentos para a empresa "Fortes Engenharia",
-#### após isso realizamos a construção de um site utilizando html, css, e javascript para comportar o banco de talentos, paralelamente
-#### também nos foi solicitado a criação de um banco de dados na terceira forma normal que seria implementado no banco de talentos.
+#### Após isso realizamos a construção de um site utilizando html, css, e javascript para comportar o banco de talentos, paralelamente
+#### Também nos foi solicitado a criação de um banco de dados na terceira forma normal que seria implementado no banco de talentos.
