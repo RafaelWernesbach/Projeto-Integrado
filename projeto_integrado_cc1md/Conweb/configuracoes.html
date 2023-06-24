@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #0B2C3F;
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: #0B2C3F;
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        header a:hover {
+            background-color: #05F26C;
+            color: #0B2C3F;
+        }
+
+        .settings-container {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            overflow: auto;
+            height: calc(100vh - 150px);
+        }
+
+        .settings-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .switch-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .switch-label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 25px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #05F26C;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(25px);
+            -ms-transform: translateX(25px);
+            transform: translateX(25px);
+        }
+
+        .selection-container {
+            margin-top: 20px;
+        }
+
+        .selection-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #084F8C;
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #0511F2;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #084F8C;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="perfil.html">Perfil</a>
+        <a href="index.html">Menu</a>
+        <a href="https://fortes.ind.br/fale-conosco/">Contatos</a>
+        <a href="comunidade.html">Comunidade</a>
+        <a href="configuracoes.html">Configurações</a>
+    </header>
+
+    <div class="settings-container">
+        <h2 class="settings-title">Configurações</h2>
+
+        <div class="switch-container">
+            <label class="switch-label">Notificações:</label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="switch-container">
+            <label class="switch-label">Modo Escuro:</label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="switch-container">
+            <label class="switch-label">Cookies:</label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="selection-container">
+            <label class="selection-label">Idioma:</label>
+            <select>
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+                <option value="pt">Português</option>
+            </select>
+        </div>
+
+        <div class="selection-container">
+            <label class="selection-label">Fonte:</label>
+            <select>
+                <option value="arial">Arial</option>
+                <option value="verdana">Verdana</option>
+                <option value="times">Times New Roman</option>
+            </select>
+        </div>
+
+        <div class="selection-container">
+            <label class="selection-label">Tamanho da Fonte:</label>
+            <select>
+                <option value="small">Pequeno</option>
+                <option value="medium">Médio</option>
+                <option value="large">Grande</option>
+            </select>
+        </div>
+
+        <button>Salvar Configurações</button>
+    </div>
+
+    <footer>
+        <p>© 2023 Fortes Engenharia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
