@@ -5,7 +5,3 @@
 - Visual Studio Code
 - Figma
 
-# PAGES
-
-- [LINK DO PAGES](https://rafaelwernesbach.github.io/pages-projeto-integrado/)
-
