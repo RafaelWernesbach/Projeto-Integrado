@@ -3,7 +3,7 @@
 
 ## PROGRAMAS QUE FORAM UTILIZADOS
 - Visual Studio Code
-- ChatGPT
+- Figma
 
 # PAGES
 
